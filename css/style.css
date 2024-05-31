@@ -1,0 +1,37 @@
+/* Ini css */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+.nav-item{
+    border: 1px solid black;
+    border: radius 2px;
+}
+
+nav>section{
+    display: flex;
+}
+.banner-container{
+    height: 578px;
+    width: 1366px;
+    border: 1px solid black;
+}
+.facility-list{
+    display: flex;
+    justify-content: space-around;
+}
+.message{
+    display: flex;
+}
+.form-result{
+    border: 1px solid black;
+    height: 100px;
+}
+.result-container{
+    width: 100%;
+}
