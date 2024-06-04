@@ -24,6 +24,7 @@ nav>section{
 .facility-list{
     display: flex;
     justify-content: space-around;
+    border-radius: 100px;
 }
 .message{
     display: flex;
