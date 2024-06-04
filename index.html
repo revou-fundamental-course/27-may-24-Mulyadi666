@@ -10,8 +10,8 @@
 
 <body>
     <nav>
-        <div class="logo-icon"></div>
-        <section>
+        <div class="logo-icon"><img src="src/logo-uday.tech.png" alt="logo-icon"></div>
+        <section style="align-items: center;">
             <a class="nav-item">Home</a>
             <a class="nav-item">Our Facilities</a>
             <a class="nav-item">Message Us</a>
@@ -21,14 +21,18 @@
     </nav>
     <!-- home -->
     <section>
-        <header>
-            <h1>Hi adi, Wellcome to website</h1>
-        </header>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis esse ad quo ea asperiores, omnis odio
-                ipsa nostrum vero rerum nulla quod error reprehenderit ipsam sunt est quae nisi odit?</p>
-        </article>
-        <div class="banner-container">
+        <div class="container">
+            <header>
+                <h1>Hi adi, Wellcome to website</h1>
+            </header>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis esse ad quo ea asperiores, omnis
+                    odio
+                    ipsa nostrum vero rerum nulla quod error reprehenderit ipsam sunt est quae nisi odit?</p>
+            </article>
+            <div class="banner-container">
+                <img src="src/1.png" alt="banner-img">
+            </div>
         </div>
 
         <!-- our Facilities -->
@@ -38,7 +42,7 @@
             </header>
             <section class="facility-list">
                 <div>
-                    <div style="width: 20px; height: 20px; border: 1px solid black; "></div>
+                    <div style="width: 100px; height: 50px; border: 1px solid black; border-radius: 100px; "></div>
                     <h5>Cek Barang</h5>
                 </div>
 
@@ -82,10 +86,18 @@
             </header>
             <section class="message">
                 <!-- form -->
-                <section>
+                <section class="message-input">
                     <form action="">
                         <label for="">Name</label>
                         <input type="text">
+                        <label for="">Tanggal Lahir</label>
+                        <input type="datetime-local">
+                        <label for="">Jenis Kelamin</label>
+                        <input type="radio" >
+                        <label for="">Pesan</label>
+                        <input type="text" alt="width: 100px height: 200px" >
+
+                        <button>Submit</button>
                     </form>
                 </section>
                 <!-- form result -->

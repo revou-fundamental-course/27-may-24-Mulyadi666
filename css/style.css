@@ -1,43 +1,80 @@
 /* Ini css */
-nav{
+
+html {
+    font-family: sans-serif;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
 }
-.logo-icon{
+
+.logo-icon img {
     height: 50px;
     width: 50px;
-    border: 1px solid black;
-}
-.nav-item{
-    border: 1px solid black;
-    border: radius 2px;
+
 }
 
-nav>section{
+nav>section {
     display: flex;
 }
-.banner-container{
-    height: 578px;
+
+.nav-item {
+    color: black;
+    font-style: bold;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    background-color: #e6e6e6;
+    border-radius: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-container {
+    height: auto;
     width: 1366px;
     border: 1px solid black;
+
 }
-.facility-list{
+.banner-container img{
+    height: auto;
+    width: 1200px;
+}
+
+.facility-list {
     display: flex;
     justify-content: space-around;
     border-radius: 100px;
 }
-.message{
+
+.message {
     display: flex;
 }
-.form-result{
+.message-input{
+    ;
+}
+
+.form-result {
     border: 1px solid black;
     height: 100px;
 }
-.result-container{
+
+.result-container {
     width: 100%;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
 }
