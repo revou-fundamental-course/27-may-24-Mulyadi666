@@ -61,9 +61,6 @@ nav>section {
 .message {
     display: flex;
 }
-.message-input{
-    ;
-}
 
 .form-result {
     border: 1px solid black;
