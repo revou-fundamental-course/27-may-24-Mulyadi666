@@ -18,10 +18,9 @@ function showDivs(n) {
 
     imgList[slideIndex - 1].style.display = "block";
 
-    // setInterval(() => {
-    //     plusDivs(1);
-    // }, 2000);
+    
 }
+setInterval(() =>plusDivs(1),3000);
 
 function tampilkanPesan(event) {
 
@@ -29,7 +28,7 @@ function tampilkanPesan(event) {
     // Mendapatkan nilai dari setiap input
     var name = document.getElementById("name").value;
     var birthdate = document.getElementById("birthdate").value;
-    var gender = document.querySelector('input[name="gender"]:checked').value;
+    var gender = document.querySelector('#input[name="gender"]:checked').value;
     var message = document.getElementById("message").value;
 
     // Memeriksa apakah jenis kelamin sudah dipilih

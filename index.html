@@ -10,17 +10,17 @@
 
 <body>
     <nav>
-        <div class="logo-icon"><img src="src/logo-uday.tech.png" alt="logo-icon"></div>
+        <div class="logo-icon"><img assets="assets/logo-uday.tech.png" alt="logo-icon"></div>
         <section style="align-items: center;">
             <a class="nav-item" href="#home">Home</a>
-            <a class="nav-item" href="#Facilities">Our Facilities</a>
-            <a class="nav-item" href="#message">Message Us</a>
+            <a class="nav-item" href="#our-facilities">Our Facilities</a>
+            <a class="nav-item" href="#message-us">Message Us</a>
         </section>
 
 
     </nav>
     <!-- home -->
-    <section id="Home">
+    <section id="home">
         <div class="container">
             <header>
                 <h1>Hi adi, Wellcome to website</h1>
@@ -31,14 +31,14 @@
                     ipsa nostrum vero rerum nulla quod error reprehenderit ipsam sunt est quae nisi odit?</p>
             </article>
             <div class="banner-container">
-                <img class="img-banner" src="src/1.png" alt="banner-img" />
-                <img class="img-banner" src="src/2.png" alt="banner-img" />
+                <img class="img-banner" assets="assets/1.png" alt="banner-img" />
+                <img class="img-banner" assets="assets/2.png" alt="banner-img" />
 
                 <button class="prev" onclick="plusDivs(-1)">
-                    <img src="src/back.png" alt="prev">
+                    <img assets="assets/back.png" alt="prev">
                 </button>
                 <button class="next" onclick="plusDivs(1)">
-                    <img src="src/next.png" alt="Next">
+                    <img assets="assets/next.png" alt="Next">
                 </button>
 
 
@@ -46,7 +46,7 @@
         </div>
 
         <!-- our Facilities -->
-        <section class="facilities" id="Facilities">
+        <section class="facilities" id="facilities">
             <header>
                 <h1>Our Facilities</h1>
             </header>
@@ -54,7 +54,7 @@
                 <div>
                     <a href="#" class="facility-link" data-direction="left">
                         <div class="facility-icon">
-                            <img src="src/consultant-services.png" alt="Konsultasi Teknologi">
+                            <img assets="assets/consultant-services.png" alt="Konsultasi Teknologi">
                         </div>
                         <h5>Konsultasi Teknologi</h5>
                     </a>
@@ -63,7 +63,7 @@
                 <div>
                     <a href="#" class="facility-link" data-direction="left">
                         <div class="facility-icon">
-                            <img src="src/maintenance.png" alt="Pemeliharaan">
+                            <img assets="assets/maintenance.png" alt="Pemeliharaan">
                         </div>
                         <h5>Pemeliharaan dan Dukungan</h5>
                     </a>
@@ -72,7 +72,7 @@
                 <div>
                     <a href="#" class="facility-link" data-direction="left">
                         <div class="facility-icon">
-                            <img src="src/testing.png" alt="Pengujian">
+                            <img assets="assets/testing.png" alt="Pengujian">
                         </div>
                         <h5>Pengujian Perangkat Lunak</h5>
                     </a>
@@ -80,7 +80,7 @@
                 <div>
                     <a href="#" class="facility-link" data-direction="left">
                         <div class="facility-icon">
-                            <img src="src/development.png" alt="Pengembangan">
+                            <img assets="assets/development.png" alt="Pengembangan">
                         </div>
                         <h5>Pengembangan Situs Web</h5>
                     </a>
@@ -88,7 +88,7 @@
                 <div>
                     <a href="#" class="facility-link" data-direction="left">
                         <div class="facility-icon">
-                            <img src="src/secure.png" alt="Keamanan">
+                            <img assets="assets/secure.png" alt="Keamanan">
                         </div>
                         <h5>Keamanan Informasi</h5>
                     </a>
@@ -97,7 +97,7 @@
                 <div>
                     <a href="#" class="facility-link" data-direction="left">
                         <div class="facility-icon">
-                            <img src="src/system-integration.png" alt="Pengujian">
+                            <img assets="assets/system-integration.png" alt="Pengujian">
                         </div>
                         <h5>Integrasi Sistem</h5>
                     </a>
@@ -114,33 +114,22 @@
             <section class="message">
                 <!-- form -->
                 <section class="message-input">
-                    <!-- <form action="">
-                        <label for="">Name</label>
-                        <input type="text">
-                        <label for="">Tanggal Lahir</label>
-                        <input type="datetime-local">
-                        <label for="">Jenis Kelamin</label>
-                        <input type="radio">
-                        <label for="">Pesan</label>
-                        <input type="text" alt="width: 100px height: 200px">
-
-                        <button>Submit</button>
-                    </form> -->
-
                     <form id="messageForm">
                         <label for="name">Name</label>
-                        <input placeholder="Nama anda" type="text" id="name" name="name" class="inputKolom" required><br>
-                        
+                        <input placeholder="Nama anda" type="text" id="name" name="name" class="inputKolom"
+                            required><br>
+
                         <label for="birthdate">Tanggal Lahir</label>
                         <input type="date" id="birthdate" name="birthdate" class="inputKolom" required><br>
-                        
+
                         <label for="gender">Jenis Kelamin</label>
                         <label><input type="radio" id="male" name="gender" value="male"> Male</label>
                         <label><input type="radio" id="female" name="gender" value="female"> Female</label><br>
                         <br>
                         <label for="message">Pesan</label>
-                        <textarea placeholder="Tulis pesan..." id="message" name="message" rows="4" class="inputKolom" required></textarea><br>
-                        
+                        <textarea placeholder="Tulis pesan..." id="message" name="message" rows="4" class="inputKolom"
+                            required></textarea><br>
+
                         <button type="submit" onclick="tampilkanPesan(event)"> Submit</button>
                     </form>
                 </section>
@@ -159,7 +148,7 @@
     </footer>
 
     <!-- scrip js -->
-    <script src="js/script.js"></script>
+    <script assets="js/script.js"></script>
 
 </body>
 
