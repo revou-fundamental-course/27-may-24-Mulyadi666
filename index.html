@@ -12,15 +12,15 @@
     <nav>
         <div class="logo-icon"><img src="src/logo-uday.tech.png" alt="logo-icon"></div>
         <section style="align-items: center;">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Our Facilities</a>
-            <a class="nav-item">Message Us</a>
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#Facilities">Our Facilities</a>
+            <a class="nav-item" href="#message">Message Us</a>
         </section>
 
 
     </nav>
     <!-- home -->
-    <section>
+    <section id="Home">
         <div class="container">
             <header>
                 <h1>Hi adi, Wellcome to website</h1>
@@ -31,78 +31,122 @@
                     ipsa nostrum vero rerum nulla quod error reprehenderit ipsam sunt est quae nisi odit?</p>
             </article>
             <div class="banner-container">
-                <img src="src/1.png" alt="banner-img">
+                <img class="img-banner" src="src/1.png" alt="banner-img" />
+                <img class="img-banner" src="src/2.png" alt="banner-img" />
+
+                <button class="prev" onclick="plusDivs(-1)">
+                    <img src="src/back.png" alt="prev">
+                </button>
+                <button class="next" onclick="plusDivs(1)">
+                    <img src="src/next.png" alt="Next">
+                </button>
+
+
             </div>
         </div>
 
         <!-- our Facilities -->
-        <section>
+        <section class="facilities" id="Facilities">
             <header>
                 <h1>Our Facilities</h1>
             </header>
             <section class="facility-list">
                 <div>
-                    <div style="width: 100px; height: 50px; border: 1px solid black; border-radius: 100px; "></div>
-                    <h5>Cek Barang</h5>
+                    <a href="#" class="facility-link" data-direction="left">
+                        <div class="facility-icon">
+                            <img src="src/consultant-services.png" alt="Konsultasi Teknologi">
+                        </div>
+                        <h5>Konsultasi Teknologi</h5>
+                    </a>
                 </div>
 
                 <div>
-                    <div style="width: 20px; height: 20px; border: 1px solid black; "></div>
-                    <h5>Cek Barang</h5>
+                    <a href="#" class="facility-link" data-direction="left">
+                        <div class="facility-icon">
+                            <img src="src/maintenance.png" alt="Pemeliharaan">
+                        </div>
+                        <h5>Pemeliharaan dan Dukungan</h5>
+                    </a>
                 </div>
 
                 <div>
-                    <div style="width: 20px; height: 20px; border: 1px solid black; "></div>
-                    <h5>Cek Barang</h5>
+                    <a href="#" class="facility-link" data-direction="left">
+                        <div class="facility-icon">
+                            <img src="src/testing.png" alt="Pengujian">
+                        </div>
+                        <h5>Pengujian Perangkat Lunak</h5>
+                    </a>
                 </div>
                 <div>
-                    <div style="width: 20px; height: 20px; border: 1px solid black; "></div>
-                    <h5>Cek Barang</h5>
+                    <a href="#" class="facility-link" data-direction="left">
+                        <div class="facility-icon">
+                            <img src="src/development.png" alt="Pengembangan">
+                        </div>
+                        <h5>Pengembangan Situs Web</h5>
+                    </a>
                 </div>
                 <div>
-                    <div style="width: 20px; height: 20px; border: 1px solid black; "></div>
-                    <h5>Cek Barang</h5>
+                    <a href="#" class="facility-link" data-direction="left">
+                        <div class="facility-icon">
+                            <img src="src/secure.png" alt="Keamanan">
+                        </div>
+                        <h5>Keamanan Informasi</h5>
+                    </a>
+
                 </div>
                 <div>
-                    <div style="width: 20px; height: 20px; border: 1px solid black; "></div>
-                    <h5>Cek Barang</h5>
-                </div>
-                <div>
-                    <div style="width: 20px; height: 20px; border: 1px solid black; "></div>
-                    <h5>Cek Barang</h5>
-                </div>
-                <div>
-                    <div style="width: 20px; height: 20px; border: 1px solid black; "></div>
-                    <h5>Cek Barang</h5>
+                    <a href="#" class="facility-link" data-direction="left">
+                        <div class="facility-icon">
+                            <img src="src/system-integration.png" alt="Pengujian">
+                        </div>
+                        <h5>Integrasi Sistem</h5>
+                    </a>
                 </div>
             </section>
 
         </section>
 
         <!-- message us -->
-        <section>
+        <section style="padding-inline: 100px;" id="message">
             <header>
                 <h1>Message Us</h1>
             </header>
             <section class="message">
                 <!-- form -->
                 <section class="message-input">
-                    <form action="">
+                    <!-- <form action="">
                         <label for="">Name</label>
                         <input type="text">
                         <label for="">Tanggal Lahir</label>
                         <input type="datetime-local">
                         <label for="">Jenis Kelamin</label>
-                        <input type="radio" >
+                        <input type="radio">
                         <label for="">Pesan</label>
-                        <input type="text" alt="width: 100px height: 200px" >
+                        <input type="text" alt="width: 100px height: 200px">
 
                         <button>Submit</button>
+                    </form> -->
+
+                    <form id="messageForm">
+                        <label for="name">Name</label>
+                        <input placeholder="Nama anda" type="text" id="name" name="name" class="inputKolom" required><br>
+                        
+                        <label for="birthdate">Tanggal Lahir</label>
+                        <input type="date" id="birthdate" name="birthdate" class="inputKolom" required><br>
+                        
+                        <label for="gender">Jenis Kelamin</label>
+                        <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+                        <label><input type="radio" id="female" name="gender" value="female"> Female</label><br>
+                        <br>
+                        <label for="message">Pesan</label>
+                        <textarea placeholder="Tulis pesan..." id="message" name="message" rows="4" class="inputKolom" required></textarea><br>
+                        
+                        <button type="submit" onclick="tampilkanPesan(event)"> Submit</button>
                     </form>
                 </section>
                 <!-- form result -->
                 <section class="result-container">
-                    <div class="form-result"></div>
+                    <div id="formResult" class="form-result"></div>
                 </section>
             </section>
 
@@ -111,9 +155,11 @@
 
     <!-- footer -->
     <footer>
-        <p>adi mulyadi</p>
+        <p>Created By Uday 2024 👾 made with ❤ </p>
     </footer>
 
+    <!-- scrip js -->
+    <script src="js/script.js"></script>
 
 </body>
 
