@@ -109,12 +109,7 @@ button.next img {
     width: 1200px;
 }
 
-/* .facility-list {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 100px;
-} */
-
+/* facilities */
 .facilities{
     padding-inline: 100px;
 }
@@ -146,8 +141,110 @@ button.next img {
     margin-top: 20px;
 }
 
-
+/* message us */
 .message {
+    padding-inline: 100px;
+    min-height: 100vh;
+    padding: 6rem 5% 1.4rem;
+}
+
+.message .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message .row .table {
+    /* background-color: whitesmoke; */
+    /* padding: 1.5rem; */
+    /* flex-grow: 1;     */
+    margin: 2rem;
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.message .row .result {
+    background-color: whitesmoke;
+    flex-grow: 2;
+    height: 20rem;
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: 9px;
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.message .row .result .result-content {
+    /* border: 2px solid #000000; */
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; */
+}
+
+.message .row .result .result-content p {
+    font-size: 1.2rem;
+}
+
+input[type=text]{
+    /* border: 1px solid #000000;   */
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 15px;
+    background-color:whitesmoke;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; */
+    margin: 0.2rem;
+}
+
+
+
+input[type=date]{
+    /* border: 1px solid #000000; */
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 9px;
+    background-color: whitesmoke;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset; */
+    margin: 0.2rem;
+}
+
+::-webkit-input-placeholder {
+    color: #000000;
+}
+
+input[type=radio]{
+    accent-color : #000;
+    margin: 0.2rem;
+}
+
+textarea {
+    /* border: 1px solid #000000; */
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 9px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
+    margin: 0.2rem;
+}
+
+input[type=submit] {
+    background-color: black;
+    /* border: 1px solid #000; */
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 18px;
+    /* box-shadow: 2px 2px 10px rgba(22, 22, 22, 0.5); */
+    color: #e4e3e3;
+}
+
+
+input[type=submit]:hover {
+    /* background-color: #3b4554; */
+    color: #fff;
+    border-color: #000;
+    box-shadow: 2px 2px 10px rgba(22, 22, 22, 0.5);
+    transition: 0.2s linear;
+}
+
+
+/* .message {
     display: flex;
 }
 
@@ -200,7 +297,9 @@ button.next img {
     width: 100%;
     padding: 10px;
     align-items: center;
-}
+} */
+
+/* end message */
 
 footer {
     display: flex;
