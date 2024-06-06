@@ -32,21 +32,12 @@ setInterval(() =>plusDivs(1),3000);
 
 // messages
 
-<<<<<<< HEAD
-    event.preventDefault();
-    // Mendapatkan nilai dari setiap input
-    var name = document.getElementById("name").value;
-    var birthdate = document.getElementById("birthdate").value;
-    var gender = document.querySelector('#input[name="gender"]:checked').value;
-    var message = document.getElementById("message").value;
-=======
 function validateForm() {
     const name = document.forms["message-form"]["full-name"].value;
     const email = document.forms["message-form"]["email"].value;
     const birthDate = document.forms["message-form"]["birth-date"].value;
     const gender = document.forms["message-form"]["gender"].value;
     const messages = document.forms["message-form"]["messages"].value;
->>>>>>> 2393991c7c0bbb894bfe6cd52e4df292644ba44b
 
     if (name == "" || email == "" || birthDate == "" || gender == "" || messages == "") {
         alert("Tidak boleh ada yang kosong");
@@ -66,40 +57,3 @@ function setSenderUi(name, email, birthDate, gender, messages) {
     document.getElementById("sender-gender").innerHTML = gender;
     document.getElementById("sender-messages").innerHTML = messages;
 }
-// end messages
-
-// function tampilkanPesan(event) {
-
-//     event.preventDefault();
-//     // Mendapatkan nilai dari setiap input
-//     var name = document.getElementById("name").value;
-//     var birthdate = document.getElementById("birthdate").value;
-//     var gender = document.querySelector('input[name="gender"]:checked').value;
-//     var message = document.getElementById("message").value;
-
-//     // Memeriksa apakah jenis kelamin sudah dipilih
-//     if (gender) {
-//         gender = gender.value;
-//     } else {
-//         gender = "Not specified";
-//     }
-
-//     // Mendapatkan waktu saat ini
-//     var currentTime = new Date();
-//     var hours = currentTime.getHours();
-//     var minutes = currentTime.getMinutes();
-//     var seconds = currentTime.getSeconds();
-//     var formattedTime = hours + ":" + minutes + ":" + seconds;
-
-//     // Membuat pesan yang akan ditampilkan di textarea
-//     var display =
-//         "<div style='padding: 5px;'>" +
-//         "<strong>curent time</strong> " + formattedTime + "<br>,<br>" +
-//         "<strong>Name:</strong> " + name + "<br>" +
-//         "<strong>Tanggal Lahir:</strong> " + birthdate + "<br>" +
-//         "<strong>Jenis Kelamin:</strong> " + gender + "<br>" +
-//         "<strong>Pesan:</strong> " + message;
-
-//     // Menampilkan pesan di textarea
-//     document.getElementById("formResult").innerHTML = display;
-// }
