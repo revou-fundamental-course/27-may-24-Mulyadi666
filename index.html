@@ -20,10 +20,10 @@
 
     </nav>
     <!-- home -->
-    <section id="Home">
+    <section id="home">
         <div class="container">
             <header>
-                <h1>Hi adi, Wellcome to website</h1>
+                <h1>Hi <span id="name-hero"></span>, Wellcome to website</h1>
             </header>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis esse ad quo ea asperiores, omnis
@@ -107,50 +107,61 @@
         </section>
 
         <!-- message us -->
-        <section style="padding-inline: 100px;" id="message">
-            <header>
-                <h1>Message Us</h1>
-            </header>
-            <section class="message">
-                <!-- form -->
-                <section class="message-input">
-                    <!-- <form action="">
-                        <label for="">Name</label>
-                        <input type="text">
-                        <label for="">Tanggal Lahir</label>
-                        <input type="datetime-local">
-                        <label for="">Jenis Kelamin</label>
-                        <input type="radio">
-                        <label for="">Pesan</label>
-                        <input type="text" alt="width: 100px height: 200px">
+           <section style="padding-inline: 100px;" class="message" id="message">
+            <h1>Messages Us</h1>
 
-                        <button>Submit</button>
-                    </form> -->
+            <div class="row">
+                <table class="table" >
+                <form action="" autocomplete="off" name="message-form" onsubmit="return validateForm()">
+                        <tr>
+                            <td><label for="Nama">Nama</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="nama" placeholder="nama" name="full-name"></td>
+                        </tr> 
 
-                    <form id="messageForm">
-                        <label for="name">Name</label>
-                        <input placeholder="Nama anda" type="text" id="name" name="name" class="inputKolom" required><br>
-                        
-                        <label for="birthdate">Tanggal Lahir</label>
-                        <input type="date" id="birthdate" name="birthdate" class="inputKolom" required><br>
-                        
-                        <label for="gender">Jenis Kelamin</label>
-                        <label><input type="radio" id="male" name="gender" value="male"> Male</label>
-                        <label><input type="radio" id="female" name="gender" value="female"> Female</label><br>
-                        <br>
-                        <label for="message">Pesan</label>
-                        <textarea placeholder="Tulis pesan..." id="message" name="message" rows="4" class="inputKolom" required></textarea><br>
-                        
-                        <button type="submit" onclick="tampilkanPesan(event)"> Submit</button>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="email" placeholder="email" name="email"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Tanggal">Tanggal Lahir</label></td>
+                            <td>:</td>
+                            <td><input type="date" name="birth-date" id="Tanggal"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td><input type="radio" name="gender" id="male" value="Laki-laki">
+                            <label for="Laki">Laki-laki</label>
+                            <input type="radio" name="gender" id="female" value="Perempuan">
+                            <label for="Perempuan">Perempuan</label></td>
+                        </tr>
+
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td><textarea name="messages" id="Pesan" placeholder="tulis pesan"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><input type="submit" value="Submit"></td>
+                        </tr>
                     </form>
-                </section>
-                <!-- form result -->
-                <section class="result-container">
-                    <div id="formResult" class="form-result"></div>
-                </section>
-            </section>
-
+                </table>
+                <div class="result">
+                    <div class="result-content">
+                        <p>Nama : <span id="sender-full-name"></span></p>
+                        <p>Email : <span id="sender-email"></span></p>
+                        <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                        <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                        <p>Pesan : <span id="sender-messages"></span></p>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </section>
 
     <!-- footer -->
