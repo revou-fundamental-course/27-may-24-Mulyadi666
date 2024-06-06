@@ -3,7 +3,8 @@
 html {
     font-family: sans-serif;
 }
-body{
+
+body {
     padding: 10px;
 }
 
@@ -51,11 +52,16 @@ nav>section {
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    overflow: hidden; /* Ensure overflow is hidden */
-    height: 500px; /* Set a fixed height for the container */
-    background-color: #00000000; /* Optional: Set a background color to better visualize centering */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    overflow: hidden;
+    /* Ensure overflow is hidden */
+    height: 500px;
+    /* Set a fixed height for the container */
+    background-color: #00000000;
+    /* Optional: Set a background color to better visualize centering */
 }
 
 .img-banner {
@@ -80,7 +86,6 @@ button.next {
     padding: none;
     background: none;
     cursor: pointer;
-
 }
 
 button.prev {
@@ -104,18 +109,12 @@ button.next img {
     width: 1366px;
 }
 
-.banner-container img{
+.banner-container img {
     height: auto;
     width: 1200px;
 }
 
-/* .facility-list {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 100px;
-} */
-
-.facilities{
+.facilities {
     padding-inline: 100px;
 }
 
@@ -142,7 +141,8 @@ button.next img {
     height: auto;
 }
 
-#moveLeftButton, #moveRightButton {
+#moveLeftButton,
+#moveRightButton {
     margin-top: 20px;
 }
 
@@ -151,13 +151,14 @@ button.next img {
     display: flex;
 }
 
-.message-input{
+.message-input {
     display: flex;
     flex-direction: column;
     align-items: start;
     font-weight: 300;
 }
-.inputKolom{
+
+.inputKolom {
     width: 400px;
     height: 50px;
     outline: none;
@@ -170,13 +171,13 @@ button.next img {
 }
 
 
-.message-input textarea{
+.message-input textarea {
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
 }
 
-.message-input button{
+.message-input button {
     border-radius: 50px;
     gap: 10px;
     padding: 15px 30px;
@@ -190,7 +191,7 @@ button.next img {
 }
 
 .form-result {
-    border:none;
+    border: none;
     height: 400px;
     background-color: whitesmoke;
     border-radius: 20px;
@@ -208,13 +209,15 @@ footer {
 }
 
 /* responsive */
-@media only screen and  (max-width : 600px){
+@media only screen and (max-width : 600px) {
     nav {
         flex-direction: column;
         align-items: center;
     }
-    .banner-container{
+
+    .banner-container {
         width: auto;
     }
+
     .
 }
